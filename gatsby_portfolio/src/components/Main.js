@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import fourwalla from '../images/fourwallaDevice.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import railvolution from '../images/railvolutionDevice.jpg'
+import s9digital from '../images/s9digitalDevice.jpg'
 
 class Main extends React.Component {
   render() {
@@ -62,9 +62,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Railvolution</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={railvolution} alt="" />
           </span>
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
@@ -91,9 +91,9 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">S9 Digital</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={s9digital} alt="" />
           </span>
           <p>
             Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
