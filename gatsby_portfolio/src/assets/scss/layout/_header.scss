@@ -9,6 +9,7 @@
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
+		@include vendor('justify-content', 'start');
 		@include vendor('align-items', 'center');
 		@include vendor('transition', (
 			'transform #{_duration(article)} ease-in-out',
@@ -25,16 +26,16 @@
 		> * {
 			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 8.5rem;
 
 			&:before {
 				content: '';
 				display: block;
 				position: absolute;
-				top: calc(-3.5rem - 1px);
+				top: calc(-8.5rem - 1px);
 				left: calc(50% - #{_size(border-width) * 1});
 				width: _size(border-width);
-				height: calc(3.5rem + 1px);
+				height: calc(8.5rem + 1px);
 				background: _palette(border);
 			}
 		}
@@ -56,7 +57,7 @@
 
 			.icon {
 				&:before {
-					font-size: 2rem;
+					font-size: 3.5rem;
 				}
 			}
 		}
@@ -100,6 +101,7 @@
 				padding-left: 0;
 				border: solid _size(border-width) _palette(border);
 				border-radius: _size(border-radius);
+				background: rgba(0,0,0,0.4);
 
 				li {
 					padding-left: 0;
